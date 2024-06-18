@@ -1,3 +1,6 @@
+import { TestClientComponent } from 'ui';
+import { TestServerComponent } from 'ui/server';
+
 export default function Index() {
   /*
    * Replace the elements below with your own.
@@ -13,6 +16,8 @@ export default function Index() {
               <span> Hello there, </span>
               Welcome todolist-web 👋
             </h1>
+            <TestClientComponent />
+            <TestServerComponent />
           </div>
 
           <div id="hero" className="rounded">
