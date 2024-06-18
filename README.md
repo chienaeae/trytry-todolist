@@ -24,7 +24,11 @@ JS Libraries:
 
 JS UI Libraries:
 
-`none`
+`libs/ui`
+
+Other:
+
+`libs/tailwind-preset`
 
 ## Development Get Started
 
