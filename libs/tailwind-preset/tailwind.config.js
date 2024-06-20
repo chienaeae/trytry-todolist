@@ -1,24 +1,22 @@
 module.exports = {
   theme: {
-    colors: {
-      primary: {
-        light: '#5eead4',
-        DEFAULT: '#14b8a6',
-        dark: '#0f766e',
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#75C6EB',
+          dark: '#32aae1',
+        },
+        dark: '#17272f',
+        light: '#e7e9ea',
+        white: '#ffffff',
+        black: '#000000',
       },
-      secondary: {
-        light: '#bae6fd',
-        DEFAULT: '#0ea5e9',
-        dark: '#0369a1',
+      spacing: {
+        sm: '0.5rem',
+        md: '1rem',
+        lg: '1.5rem',
+        xl: '2rem',
       },
-      white: '#ffffff',
-      black: '#000000',
-    },
-    spacing: {
-      sm: '0.5rem',
-      md: '1rem',
-      lg: '1.5rem',
-      xl: '2rem',
     },
   },
   plugins: [],
