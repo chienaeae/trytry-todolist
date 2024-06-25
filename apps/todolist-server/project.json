@@ -5,6 +5,22 @@
   "sourceRoot": "apps/todolist-server",
   "tags": [],
   "targets": {
+    "dev-start": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "make dev-start",
+        "cwd": "apps/todolist-server"
+      }
+    },
+    "dev-clean": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "make dev-clean",
+        "cwd": "apps/todolist-server"
+      }
+    },
     "build": {
       "executor": "@nx-go/nx-go:build",
       "options": {
@@ -13,6 +29,7 @@
     },
     "serve": {
       "executor": "@nx-go/nx-go:serve",
+      "dependsOn": ["dev-start"],
       "options": {
         "main": "{projectRoot}/server.go"
       }
