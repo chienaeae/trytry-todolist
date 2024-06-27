@@ -1,0 +1,24 @@
+{
+  "name": "todolist-graph",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/todolist-graph/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "todolist-graph:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "todolist-graph:build:development"
+        },
+        "production": {
+          "buildTarget": "todolist-graph:build:production"
+        }
+      }
+    }
+  }
+}

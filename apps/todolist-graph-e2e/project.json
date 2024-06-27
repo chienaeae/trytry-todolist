@@ -1,0 +1,17 @@
+{
+  "name": "todolist-graph-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["todolist-graph"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "apps/todolist-graph-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "dependsOn": ["todolist-graph:build"]
+    }
+  }
+}
