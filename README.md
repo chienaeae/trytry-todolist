@@ -10,13 +10,17 @@ Frontend Application:
 
 `apps/todolist-web`, `apps/todolist-web-e2e`
 
+GraphQL Server Application:
+
+`apps/todolist-graph`
+
 Backend Application:
 
 `apps/todolist-server`
 
 Go Libraries:
 
-`none`
+`libs/sqlc`
 
 JS Libraries:
 
@@ -40,15 +44,15 @@ npm install
 npm run prepare
 ```
 
-### Fronend
+### Web
 
-To start the development frontend server:
+Launch the development frontend server:
 
 ```
 npx nx run todolist-web:dev
 ```
 
-To start the production frontend server:
+Launch the production frontend server:
 
 ```
 npx nx run todolist-web:start
@@ -66,21 +70,41 @@ See more tasks to use:
 npx nx show project todolist-web -web
 ```
 
-### Backend
+### Graph
 
-To start the development server:
+Launch the development server:
+
+```
+npx nx run todolist-graph:serve
+```
+
+Launch the production server:
+
+```
+npx nx run todolist-graph:serve:production
+```
+
+See more tasks to execute:
+
+```
+npx nx show project todolist-graph -web
+```
+
+### Server
+
+Launch the development server:
 
 ```
 npx nx run todolist-server:serve
 ```
 
-To build the production server:
+Build the production server:
 
 ```
 npx nx run todolist-server:build
 ```
 
-To run the production server after successfuly build:
+Launch the production server after built:
 
 ```
 ./dist/apps/todolist-server
